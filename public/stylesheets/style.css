@@ -156,6 +156,7 @@ body {
 		flex:none;
 		width:40px !important;
 		height:40px !important;
+		padding: 0 !important;
 }
 #sfx-btn .fa-volume-up{
 	width: 22px !important;
