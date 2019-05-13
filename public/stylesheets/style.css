@@ -151,7 +151,11 @@ body {
 #briefcase-btn,
 #sfx-btn,
 #camera-btn{
-		display: block;
+		display: block !important;
+		font-size:14px !important;
+		flex:none;
+		width:40px !important;
+		height:40px !important;
 }
 #sfx-btn .fa-volume-up{
 	width: 22px !important;
