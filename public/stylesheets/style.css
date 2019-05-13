@@ -1,3 +1,9 @@
+html,
+body {
+    overflow: hidden;
+    height:100%;
+}
+
 body {
 	font-family: Monospace;
 	background-color: #000;
