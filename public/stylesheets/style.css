@@ -148,6 +148,26 @@ body {
 	height: 75px;
 }
 
-.svg-inline--fa.fa-w-18 {
-	width: 80% !important;
+#briefcase-btn,
+#sfx-btn,
+#camera-btn{
+		display: block;
+}
+#sfx-btn .fa-volume-up{
+	width: 22px !important;
+	height: 20px !important;
+	vertical-align:middle !important;
+}
+
+#sfx-btn .fa-volume-down{
+	width: 12.5px !important;
+	height: 25px !important;
+	vertical-align:middle !important;
+}
+
+#briefcase-btn .fa-briefcase,
+#camera-btn .fa-camera{
+	width: 25px !important;
+	height: 25px !important;
+	vertical-align:middle !important;
 }
