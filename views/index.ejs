@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>3D Web Game</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="description" content="3D Web Game. Using the Three.js library. author:Nik Lever ©2018 category:application-javascript" />
-		<meta property="og:url" content="http://niklever.com/games/losttreasure" />
-		<meta property="og:type" content="product" />
-		<meta property="og:title" content="3D Web Game" />
-		<meta property="og:description" content="Lost Treasure is a 3d RPG game. Using the Three.js library. author:Nik Lever ©2018 category:application-javascript" />
-		<meta property="og:image" content="http://niklever.com/games/losttreasure/assets/losttreasure-og.jpg" />
-		<meta property="og:image:secure_url" content="https://niklever.com/games/losttreasure/assets/losttreasure-og.jpg" />
-		<meta property="og:image:type" content="image/jpeg" />
-		<meta property="og:image:width" content="1255" />
-		<meta property="og:image:height" content="784" />
-		<meta property="og:image:alt" content="Lost Treasure - the mystery puzzle game" />
-		<meta property='og:video' content='https://www.youtube.com/v/PVDslewhzqY' />
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Kavivanar" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <div id="message">
-			<p id="message_text"></p>
-			<button id="message_ok">OK</button>
-		</div>
-		<div id="overlay"></div>
-        <button id="sfx-btn"><i class="fas fa-volume-up"></i></button>
-		<button id="camera-btn"><i class="fas fa-camera"></i></button>
-		<button id="action-btn"><i class="fas fa-hand-point-up"></i></button>
-		<button id="briefcase-btn"><i class="fas fa-briefcase"></i></button>
-        <div id="briefcase">
-            <ul>
-                <li><a href="#"><img></img></li>
-                <li><a href="#"><img></img></li>
-                <li><a href="#"><img></img></li>
-            </ul>
-        </div>
-		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
-        <script src="/javascripts/three.min.js"></script>
-		<script src="/javascripts/inflate.min.js"></script>
-		<script src="/javascripts/FBXLoader.js"></script>
-		<script src="/javascripts/Detector.js"></script>
-		<!--<script src="../../libs/stats.min.js"></script>-->
-		<script src="/javascripts/game.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function(){
-				const game = new Game();
-				window.game = game;//For debugging only
-			});
-		</script>
-  </body>
+<head>
+	<title>3D Web Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description"
+		content="3D Web Game. Using the Three.js library. author:Nik Lever ©2018 category:application-javascript" />
+	<meta property="og:url" content="http://niklever.com/games/losttreasure" />
+	<meta property="og:type" content="product" />
+	<meta property="og:title" content="3D Web Game" />
+	<meta property="og:description"
+		content="Lost Treasure is a 3d RPG game. Using the Three.js library. author:Nik Lever ©2018 category:application-javascript" />
+	<meta property="og:image" content="http://niklever.com/games/losttreasure/assets/losttreasure-og.jpg" />
+	<meta property="og:image:secure_url" content="https://niklever.com/games/losttreasure/assets/losttreasure-og.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1255" />
+	<meta property="og:image:height" content="784" />
+	<meta property="og:image:alt" content="Lost Treasure - the mystery puzzle game" />
+	<meta property='og:video' content='https://www.youtube.com/v/PVDslewhzqY' />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Kavivanar" rel="stylesheet">
+	<link rel='stylesheet' href='./stylesheets/style.css' />
+</head>
+
+<body>
+	<div id="message">
+		<p id="message_text"></p>
+		<button id="message_ok">OK</button>
+	</div>
+	<div id="overlay"></div>
+	<button id="sfx-btn"><i class="fas fa-volume-up"></i></button>
+	<button id="camera-btn"><i class="fas fa-camera"></i></button>
+	<button id="action-btn"><i class="fas fa-hand-point-up"></i></button>
+	<button id="briefcase-btn"><i class="fas fa-briefcase"></i></button>
+	<div id="briefcase">
+		<ul>
+			<li><a href="#"><img></img></li>
+			<li><a href="#"><img></img></li>
+			<li><a href="#"><img></img></li>
+		</ul>
+	</div>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+		integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+		crossorigin="anonymous"></script>
+
+	<script src="./javascripts/three.min.js"></script>
+	<script src="./javascripts/inflate.min.js"></script>
+	<script src="./javascripts/FBXLoader.js"></script>
+	<script src="./javascripts/Detector.js"></script>
+	<!--<script src="../../libs/stats.min.js"></script>-->
+	<script src="./javascripts/game.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const game = new Game();
+			window.game = game;//For debugging only
+		});
+	</script>
+</body>
+
 </html>
