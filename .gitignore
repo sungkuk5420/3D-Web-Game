@@ -74,7 +74,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
-package-lock.json
 uploads
 static
 build
