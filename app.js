@@ -40,7 +40,7 @@ app.use(function (err, req, res, next) {
 });
 
 
-var port = '5000';
+var port = '7000';
 
 app.listen(port, function () {
   console.log(`Wetube app listening on port ${port}!`);
